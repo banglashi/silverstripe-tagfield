@@ -282,12 +282,12 @@ class StringTagField extends DropdownField
 
         $record->$name = $this->dataValue();
 
-        $immediate_write_enabled = Deprecation::withNoReplacement(function () {
-            return self::config()->get('immediate_write_enabled');
-        });
-        if ($immediate_write_enabled) {
-            $record->write();
-        }
+//         $immediate_write_enabled = Deprecation::withNoReplacement(function () {
+//             return self::config()->get('immediate_write_enabled');
+//         });
+//         if ($immediate_write_enabled) {
+//             $record->write();
+//         }
     }
 
     /**
